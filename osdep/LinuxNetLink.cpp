@@ -27,7 +27,9 @@
 #ifndef IFNAMSIZ
 #define IFNAMSIZ 16
 #endif
-const int ZT_RTE_METRIC = 5000;
+
+#fedora wifi has 4000 as default metric, needs to be lower for all packet routing
+const int ZT_RTE_METRIC = 1000;
 
 namespace ZeroTier {
 
